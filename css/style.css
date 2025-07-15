@@ -1,0 +1,143 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Estructura */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.grid {
+    display: grid;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col {
+    flex: 1;
+    padding: 15px;
+}
+
+.col-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-md {
+    gap: 4em 2em;
+}
+
+.ancho-maximo {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main header */
+.main-header {
+    background: url('../img/background-hero.webp') no-repeat center/cover;
+    height: 480px;
+}
+
+.main-header__hero h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    /* grid-template-columns: 20% 1fr; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* gap: 25px; */
+    height: 60px;
+}
+
+.main-nav__menutrigger {
+    display: none;
+    cursor: pointer;
+}
+
+.main-nav__enlaces ul {
+    list-style-type: none;
+}
+
+.main-nav__logo {
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    margin-left: 70px;
+}
+
+.padding-lateral {
+    margin-top: 10px;
+    grid-template-columns: 40% 1fr;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-self: center; */
+    padding: 0 15px;
+}
+
+.main-nav__list {
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.main-nav__list li a {
+    color: #fff !important;
+    text-decoration: none;
+    padding: 10px 15px;
+
+}

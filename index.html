@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=" initial-scale=1, width=device-width" />
+    <title>Clock Events - Personal, proyección y servicios para eventos</title>
+
+    <!-- Tipografías -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:300,400,700%7COpen+Sans:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- mis estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header principal -->
+    <header class="main-header">
+      <!-- navegación -->
+      <nav class="main-nav">
+        <!-- aunque el nav solo tiene un hijo aplicamos grid para centrarlo fácilmente en vertical -->
+        <div class="grid ancho-maximo padding-lateral">
+          <!-- logo con enlace-->
+          <a class="main-nav__logo" href="index.html">
+            <img src="img/big-logo.png" alt="Logo Clock Events" />
+          </a>
+
+          <!-- botón para móvil -->
+          <div class="main-nav__menutrigger">
+            <img
+              src="img/boton-responsive.png"
+              alt="Ver menú"
+              aria-label="Ver menú"
+            />
+          </div>
+
+          <!-- enlaces del menu -->
+
+          <ul class="main-nav__list grid">
+            <li><a href="index.html">Inicio</a></li>
+
+            <li><a href="personal.html">Personal</a></li>
+
+            <li><a href="equipo.html">Equipo</a></li>
+
+            <li><a href="clientes.html">Clientes</a></li>
+
+            <li><a href="galeria.html">Galería</a></li>
+
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- mensajes hero -->
+      <div class="main-header__hero grid">
+        <h1>Personal, proyección y servicios para eventos</h1>
+        <img src="img/big-logo.png" alt="Logo Clock Events" />
+      </div>
+    </header>
+
+    <!-- contenido principal -->
+    <main>
+      <!-- sección nuestros servicios -->
+      <section class="servicios ancho-maximo padding-extra">
+        <header>
+          <h2>Nuestros servicios</h2>
+
+          <ul class="servicios__iconos flex-center">
+            <li>
+              <svg class="icon">
+                <use href="img/sprite-icons.svg#icon-1"></use>
+              </svg>
+              <p>Asistentes</p>
+            </li>
+
+            <li>
+              <svg class="icon">
+                <use href="img/sprite-icons.svg#icon-2"></use>
+              </svg>
+              <p>Fotógrafos</p>
+            </li>
+
+            <li>
+              <svg class="icon">
+                <use href="img/sprite-icons.svg#icon-3"></use>
+              </svg>
+              <p>Estilismo</p>
+            </li>
+
+            <li>
+              <svg class="icon">
+                <use href="img/sprite-icons.svg#icon-4"></use>
+              </svg>
+              <p>Seguridad</p>
+            </li>
+
+            <li>
+              <svg class="icon">
+                <use href="img/sprite-icons.svg#icon-5"></use>
+              </svg>
+              <p>Análisis</p>
+            </li>
+          </ul>
+        </header>
+
+        <!-- explicación de los servicios -->
+        <div class="grid col-3 gap-md">
+          <!-- card servicio -->
+          <div class="card-servicio">
+            <figure class="card-servicio__img">
+              <img
+                src="img/servicios-personal.webp"
+                alt="bla bla descripción de la imagen"
+              />
+            </figure>
+            <div class="card-servicio__info">
+              <h3 class="card-servicio__titulo">Personal de Asistencia</h3>
+              <p>
+                Nuestro equipo de asistentes profesionales, hombres y mujeres,
+                está listo para recibir y guiar a tus invitados. Atención al
+                detalle para el éxito de tu evento.
+              </p>
+            </div>
+          </div>
+
+          <!-- card servicio -->
+          <div class="card-servicio">
+            <figure class="card-servicio__img">
+              <img
+                src="img/servicios-tecnicos.webp"
+                alt="bla bla descripción de la imagen"
+              />
+            </figure>
+            <div class="card-servicio__info">
+              <h3 class="card-servicio__titulo">Producción Técnica</h3>
+              <p>
+                Gestionamos todo el equipo técnico: audio, video e iluminación.
+                Creamos una atmósfera profesional y envolvente para que tu
+                mensaje y marca brillen.
+              </p>
+            </div>
+          </div>
+
+          <!-- card servicio -->
+          <div class="card-servicio">
+            <figure class="card-servicio__img">
+              <img
+                src="img/servicios-planificacion.jpg"
+                alt="bla bla descripción de la imagen"
+              />
+            </figure>
+            <div class="card-servicio__info">
+              <h3 class="card-servicio__titulo">Planificación y Diseño</h3>
+              <p>
+                Conceptualizamos y diseñamos tu evento a medida. Nos encargamos
+                de cada detalle, desde el concepto hasta la temática y la
+                decoración. Tu visión, nuestra realidad.
+              </p>
+            </div>
+          </div>
+          <!-- card servicio -->
+          <div class="card-servicio">
+            <figure class="card-servicio__img">
+              <img
+                src="img/servicios-proveedores.webp"
+                alt="bla bla descripción de la imagen"
+              />
+            </figure>
+            <div class="card-servicio__info">
+              <h3 class="card-servicio__titulo">Gestión de Proveedores</h3>
+              <p>
+                Buscamos y coordinamos a los mejores proveedores. Catering,
+                sonido, iluminación y más. Negociamos para ti y garantizamos la
+                mejor calidad y precio.
+              </p>
+            </div>
+          </div>
+          <!-- card servicio -->
+          <div class="card-servicio">
+            <figure class="card-servicio__img">
+              <img
+                src="img/servicios-coordinacion.webp"
+                alt="bla bla descripción de la imagen"
+              />
+            </figure>
+            <div class="card-servicio__info">
+              <h3 class="card-servicio__titulo">Coordinación y Logística</h3>
+              <p>
+                Nos aseguramos de que todo fluya sin contratiempos el día del
+                evento. Desde el cronograma hasta los imprevistos, gestionamos
+                cada momento para tu tranquilidad.
+              </p>
+            </div>
+          </div>
+          <!-- card servicio -->
+          <div class="card-servicio">
+            <figure class="card-servicio__img">
+              <img
+                src="img/servicios-entretenimiento.webp"
+                alt="bla bla descripción de la imagen"
+              />
+            </figure>
+            <div class="card-servicio__info">
+              <h3 class="card-servicio__titulo">Entretenimiento a Medida</h3>
+              <p>
+                Contratamos a los mejores talentos para hacer tu evento
+                inolvidable. Música en vivo, DJs, oradores o shows. El
+                espectáculo perfecto para tu público.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Soluciones -->
+      <section class="soluciones">
+        <div class="grid col-2 gap-md ancho-maximo padding-extra">
+          <!-- Titulo y textos de la sección  -->
+          <div class="soluciones__informacion">
+            <header>
+              <h2>Tu Evento Empieza Aquí</h2>
+            </header>
+
+            <p>
+              Estás a un solo paso de crear una experiencia inolvidable. Nuestro
+              equipo experto te espera para hacer realidad tu visión.
+            </p>
+
+            <p>
+              Déjanos encargarnos de cada detalle. Agenda una consulta gratuita
+              y descubre lo fácil que es organizar un evento perfecto.
+            </p>
+
+            <a href="#" class="boton blanco">Consulta gratuita</a>
+          </div>
+
+          <!-- imagen decorativa -->
+          <div class="soluciones__img">
+            <img
+              alt="detalle de logotipo de clock events"
+              src="img/logo-detalle.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Valores -->
+      <section class="valores ancho-maximo padding-extra">
+        <header>
+          <h2>¿Por qué tu Evento será un éxito con Clock Events?</h2>
+        </header>
+
+        <div class="grid col-4 gap-md">
+          <!-- valor 1 -->
+          <div class="valores_card">
+            <header>
+              <svg class="icon">
+                <use href="img/sprite-icons.svg#icon-valor-1"></use>
+              </svg>
+              <h3>Personalización</h3>
+            </header>
+            <p>
+              Tu visión es única. Creamos eventos a medida que reflejan tu
+              esencia y objetivos.
+            </p>
+          </div>
+
+          <!-- valor 2 -->
+          <div class="valores_card">
+            <header>
+              <svg class="icon">
+                <use href="img/sprite-icons.svg#icon-valor-2"></use>
+              </svg>
+              <h3>Equipo</h3>
+            </header>
+            <p>
+              Nuestro personal está capacitado para brindar un servicio de
+              excelencia y profesional
+            </p>
+          </div>
+
+          <!-- valor 3 -->
+          <div class="valores_card">
+            <header>
+              <svg class="icon">
+                <use href="img/sprite-icons.svg#icon-valor-3"></use>
+              </svg>
+              <h3>Creatividad</h3>
+            </header>
+            <p>
+              Rompe con lo convencional para crear experiencias que sorprenden y
+              perduran.
+            </p>
+          </div>
+
+          <!-- valor 4 -->
+          <div class="valores_card">
+            <header>
+              <svg class="icon">
+                <use href="img/sprite-icons.svg#icon-valor-4"></use>
+              </svg>
+              <h3>Tecnología</h3>
+            </header>
+            <p>
+              Integramos la última tecnología en cada evento para una
+              experiencia interactiva y fluida.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <aside class="newsletter padding-extra">
+        <header>
+          <h3>Apúntate a nuestro newsletter</h3>
+        </header>
+
+        <a href="#" class="boton negro">Suscribirte</a>
+
+        <p>
+          Consejos de expertos, ideas y tendencias para eventos. ¡Suscríbete
+          ahora!
+        </p>
+      </aside>
+
+      <!-- Testimonio clientes -->
+      <section class="testimonio ancho-maximo padding-extra">
+        <header>
+          <h2>La opinión de nuestros clientes</h2>
+        </header>
+
+        <div class="grid col-3 gap-md">
+          <!-- testimonio -->
+          <div class="card-testimonio">
+            <img class="card-testimonio__rate" src="img/icon-rate.svg" alt="" />
+            <p class="card-testimonio__texto">
+              Hemos organizado un evento corporativo con ellos para 160 personas
+              y la experiencia fue genial. Fueron muy profesionales, todo estaba
+              perfectamente organizado, la comida estaba deliciosa y el ambiente
+              que crearon fue fantástico. Muy recomendable.
+            </p>
+            <p class="card-testimonio__identidad">
+              <span class="card-testimonio__nombre">Susana Carrillo</span> /
+              Momentum
+            </p>
+          </div>
+          <!-- testimonio -->
+          <div class="card-testimonio">
+            <img class="card-testimonio__rate" src="img/icon-rate.svg" alt="" />
+            <p class="card-testimonio__texto">
+              Necesitábamos organizar una convención anual de nuestra empresa y
+              fue un éxito total. La organización fue impecable, desde la
+              logística hasta las actividades. Crearon un ambiente tan especial
+              que la experiencia fue inolvidable. Su profesionalismo es de 10.
+            </p>
+            <p class="card-testimonio__identidad">
+              <span class="card-testimonio__nombre">Esteban González</span> /
+              Ágora Market
+            </p>
+          </div>
+
+          <!-- testimonio -->
+          <div class="card-testimonio">
+            <img class="card-testimonio__rate" src="img/icon-rate.svg" alt="" />
+            <p class="card-testimonio__texto">
+              Hemos organizado el lanzamiento de nuestro nuevo producto con
+              ellos para más de 100 personas y la experiencia fue genial. Los
+              clientes quedaron muy satisfechos, la presentación fue
+              espectacular y lograron un ambiente vibrante. ¡Muchas gracias!
+            </p>
+            <p class="card-testimonio__identidad">
+              <span class="card-testimonio__nombre">Miguel Sánchez</span> /
+              Vertex
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-principal grey-section">
+      <img src="img/logo-footer-white.png" alt="Logotipo Clock Events" />
+
+      <p>
+        <small
+          >&copy; Clock Events | <a href="#" target="_blank">Aviso Legal</a> |
+          <a href="#" target="_blank">Cookies</a></small
+        >
+      </p>
+    </footer>
+  </body>
+
+  <!-- script para menu responsive -->
+  <!-- 
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<script src="js/menu-responsive.js"></script> -->
+</html>
