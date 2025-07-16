@@ -26,6 +26,11 @@ h3 {
     padding: 0 15px;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
 .grid {
     display: grid;
 
@@ -74,6 +79,35 @@ img {
     display: block;
 }
 
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blanco {
+    background-color: #a9a0a0;
+    color: #000;
+}
+
+.negro {
+    background-color: #000;
+    color: #fff;
+}
+
+.padding-extra {
+    padding: 15px 0 15px 0;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    fill: #b7adad;
+}
+
+
 /* Main header */
 .main-header {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../img/background-hero.webp') no-repeat center/cover;
@@ -99,6 +133,7 @@ img {
     margin: 0px auto 60px;
 }
 
+/* Nav */
 .main-nav {
     position: fixed;
     top: 0;
@@ -147,8 +182,173 @@ img {
 
 }
 
-.icon {
-    width: 20px;
-    height: 20px;
-    fill: #111010;
+/* Servicios */
+.servicios {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.servicios h2 {
+    padding-bottom: 25px;
+}
+
+.servicios__iconos {
+    text-align: center;
+    list-style: none;
+    gap: 80px;
+    margin-bottom: 25px;
+}
+
+.servicios__iconos p {
+    font-family: 'Open Sans', ui-sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #b7adad;
+    ;
+}
+
+.card-servicio__info {
+    /* height: 40%; */
+    display: grid;
+    text-align: left;
+    justify-content: start !important;
+    align-items: start;
+    padding: 10px 0 0 0;
+    gap: 10px;
+}
+
+/* Sección Soluciones  */
+.soluciones {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../img/background-soluciones.webp') fixed no-repeat center/cover;
+    height: 500px;
+    text-align: center;
+}
+
+.soluciones__informacion {
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    align-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 65px);
+    text-align: start;
+    /* height: 100%; */
+    color: #fff;
+    gap: 2px;
+    padding-left: 55px;
+}
+
+.soluciones__informacion p {
+    font-family: 'Open Sans', ui-sans-serif;
+    font-weight: 400;
+    color: #b7adad;
+}
+
+.soluciones__informacion a {
+    width: 50%;
+    text-transform: uppercase;
+    padding: 15px 60px;
+}
+
+.soluciones__img img {
+    padding-top: 50px;
+    width: 70%;
+    height: auto;
+}
+
+/* Valores */
+.valores  {
+    text-align: center;
+}
+
+.valores header h2 {
+    padding-bottom: 25px;
+}
+
+.valores_card {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../img/background-soluciones.webp') fixed center center/cover;
+    color: #fff;
+    padding: 20px;;
+}
+
+/* Newsletter */
+.newsletter  {
+  background: #cdd4d9;
+  text-align: center;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 100px 60px;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.newsletter a {
+    /* align-self: center; */
+    /* grid-row: 1/1; */
+    padding: 10px 35px;
+    /* width: 20%; */
+    /* margin-left: 28em; */
+    margin: 0 auto;
+}
+
+/* Testimonio */
+.testimonio header h2 {
+  text-align: center;
+  margin: 20px 0 20px;
+}
+
+.card-testimonio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 70px);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-testimonio__rate {
+    width: 35%;
+}
+
+.card-testimonio__texto {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.card-testimonio__nombre {
+    font-weight: 600;
+    color: #575a5d;
+}
+
+/* Footer */
+.footer-principal.grey-section {
+    display: grid;
+    background: #060404;
+    grid-template-rows: 50px 50px;
+    justify-content: center;
+    align-self: center;
+    color: #fff;
+    padding: 20px 0;
+    gap: 50px;
+}
+
+.footer-principal img {
+    width: 170px;
+    height: 80px;
+    padding: 30px 0 0px 60px;
+}
+
+.footer-principal p {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-principal a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
 }
