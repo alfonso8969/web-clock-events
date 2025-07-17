@@ -110,7 +110,8 @@ img {
 
 /* Main header */
 .main-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../img/background-hero.webp') no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+    url('../img/background-hero.webp') no-repeat center/cover;
     height: 600px;
 }
 
@@ -204,7 +205,6 @@ img {
     text-transform: uppercase;
     font-weight: 400;
     color: #b7adad;
-    ;
 }
 
 .card-servicio__info {
@@ -257,7 +257,7 @@ img {
 }
 
 /* Valores */
-.valores  {
+.valores {
     text-align: center;
 }
 
@@ -268,21 +268,21 @@ img {
 .valores_card {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../img/background-soluciones.webp') fixed center center/cover;
     color: #fff;
-    padding: 20px;;
+    padding: 20px;
 }
 
 /* Newsletter */
-.newsletter  {
-  background: #cdd4d9;
-  text-align: center;
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 60px 100px 60px;
-  gap: 10px;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+.newsletter {
+    background: #cdd4d9;
+    text-align: center;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 100px 60px;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .newsletter a {
@@ -296,8 +296,8 @@ img {
 
 /* Testimonio */
 .testimonio header h2 {
-  text-align: center;
-  margin: 20px 0 20px;
+    text-align: center;
+    margin: 20px 0 20px;
 }
 
 .card-testimonio {
